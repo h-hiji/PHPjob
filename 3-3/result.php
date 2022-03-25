@@ -14,18 +14,12 @@
     $array = str_split($number);
     $keys = array_rand($array, 1);
     $fortune = $array[$keys];
-    $numberLength = strlen($number);
-    $limit = 9;
-    $errMsg = '';
     date_default_timezone_set('Asia/Tokyo');
     ?>
     <!-- step2:結果を表すページを作成し、フォームから受け取った数字の羅列から1文字の数字を抜き出す。 -->
     <!-- step3:今日の日付と結果を表示する。 -->
     <p>
         <?php
-        if ($limit < $numberLength || $numberLength < $limit) {
-        echo $errMsg = '9文字でで入力して下さい。';
-        }else{
             echo date("Y/m/d", time())."の運勢は<br>";
             echo "選ばれた数字は".$fortune."<br>";
             if($fortune == 0) {
@@ -38,7 +32,6 @@
             echo "吉";
             } else {
             echo "大吉";
-        }
         } ?>
     </p>
 </body>

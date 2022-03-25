@@ -12,7 +12,7 @@
     <!-- step1:入力フォームの作成 -->
     <form action="result.php" method="post">
         <h2>0〜9の番号を使って好きな数字の羅列を入力してください。</h2>
-        <input type="number" name="count" maxlength="9" />
+        <input type="number" name="count" />
         <input type="submit" value="占う" />
     </form>
 
