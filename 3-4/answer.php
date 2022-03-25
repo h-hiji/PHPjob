@@ -22,9 +22,6 @@ $correct3 = "select";
 //選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する
 ?>
     <p>
-        <?php echo $answer1 ?>
-        <?php echo $answer2 ?>
-        <?php echo $answer3 ?>
         <!--POST通信で送られてきた名前を表示-->
         <?php echo $name ?>さんの結果は・・・？
     </p>
@@ -32,7 +29,6 @@ $correct3 = "select";
         <?php
         if ($answer1 == $correct1 ) {
         echo "正解！";
-        var_dump($answer1);
     } else {
         echo "残念・・・";
     }
